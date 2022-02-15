@@ -13,7 +13,7 @@ struct SwiftUIDemoApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Homescreen()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

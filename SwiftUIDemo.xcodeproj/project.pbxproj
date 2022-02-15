@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7600F53F279F929800FB468F /* SwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7600F53E279F929800FB468F /* SwiftUIDemoApp.swift */; };
-		7600F541279F929800FB468F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7600F540279F929800FB468F /* ContentView.swift */; };
 		7600F543279F929900FB468F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7600F542279F929900FB468F /* Assets.xcassets */; };
 		7600F546279F929900FB468F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7600F545279F929900FB468F /* Preview Assets.xcassets */; };
 		7600F548279F929900FB468F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7600F547279F929900FB468F /* Persistence.swift */; };
@@ -16,6 +15,11 @@
 		7600F555279F929900FB468F /* SwiftUIDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7600F554279F929900FB468F /* SwiftUIDemoTests.swift */; };
 		7600F55F279F929900FB468F /* SwiftUIDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7600F55E279F929900FB468F /* SwiftUIDemoUITests.swift */; };
 		7600F561279F929900FB468F /* SwiftUIDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7600F560279F929900FB468F /* SwiftUIDemoUITestsLaunchTests.swift */; };
+		762B5EDA27A3735E00C2D24D /* Homescreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762B5ED927A3735E00C2D24D /* Homescreen.swift */; };
+		76844FE027B7337900154639 /* PushingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76844FDF27B7337900154639 /* PushingScreen.swift */; };
+		76844FE227B733A700154639 /* PresentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76844FE127B733A700154639 /* PresentScreen.swift */; };
+		76844FE527B79C5000154639 /* protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76844FE427B79C5000154639 /* protocols.swift */; };
+		76D437E727A61E1F007DB759 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D437E627A61E1F007DB759 /* DetailScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +42,6 @@
 /* Begin PBXFileReference section */
 		7600F53B279F929800FB468F /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7600F53E279F929800FB468F /* SwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoApp.swift; sourceTree = "<group>"; };
-		7600F540279F929800FB468F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7600F542279F929900FB468F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7600F545279F929900FB468F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7600F547279F929900FB468F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +51,11 @@
 		7600F55A279F929900FB468F /* SwiftUIDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7600F55E279F929900FB468F /* SwiftUIDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoUITests.swift; sourceTree = "<group>"; };
 		7600F560279F929900FB468F /* SwiftUIDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		762B5ED927A3735E00C2D24D /* Homescreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homescreen.swift; sourceTree = "<group>"; };
+		76844FDF27B7337900154639 /* PushingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushingScreen.swift; sourceTree = "<group>"; };
+		76844FE127B733A700154639 /* PresentScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentScreen.swift; sourceTree = "<group>"; };
+		76844FE427B79C5000154639 /* protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocols.swift; sourceTree = "<group>"; };
+		76D437E627A61E1F007DB759 /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +106,10 @@
 		7600F53D279F929800FB468F /* SwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				76844FE327B79C1F00154639 /* protocols */,
+				762B5ED827A3733500C2D24D /* screens */,
+				762B5ED727A372A600C2D24D /* apputils */,
 				7600F53E279F929800FB468F /* SwiftUIDemoApp.swift */,
-				7600F540279F929800FB468F /* ContentView.swift */,
-				7600F542279F929900FB468F /* Assets.xcassets */,
-				7600F547279F929900FB468F /* Persistence.swift */,
 				7600F549279F929900FB468F /* SwiftUIDemo.xcdatamodeld */,
 				7600F544279F929900FB468F /* Preview Content */,
 			);
@@ -131,6 +139,34 @@
 				7600F560279F929900FB468F /* SwiftUIDemoUITestsLaunchTests.swift */,
 			);
 			path = SwiftUIDemoUITests;
+			sourceTree = "<group>";
+		};
+		762B5ED727A372A600C2D24D /* apputils */ = {
+			isa = PBXGroup;
+			children = (
+				7600F542279F929900FB468F /* Assets.xcassets */,
+				7600F547279F929900FB468F /* Persistence.swift */,
+			);
+			path = apputils;
+			sourceTree = "<group>";
+		};
+		762B5ED827A3733500C2D24D /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				762B5ED927A3735E00C2D24D /* Homescreen.swift */,
+				76D437E627A61E1F007DB759 /* DetailScreen.swift */,
+				76844FDF27B7337900154639 /* PushingScreen.swift */,
+				76844FE127B733A700154639 /* PresentScreen.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		76844FE327B79C1F00154639 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				76844FE427B79C5000154639 /* protocols.swift */,
+			);
+			path = protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,10 +299,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76844FE227B733A700154639 /* PresentScreen.swift in Sources */,
+				76D437E727A61E1F007DB759 /* DetailScreen.swift in Sources */,
 				7600F54B279F929900FB468F /* SwiftUIDemo.xcdatamodeld in Sources */,
 				7600F548279F929900FB468F /* Persistence.swift in Sources */,
-				7600F541279F929800FB468F /* ContentView.swift in Sources */,
 				7600F53F279F929800FB468F /* SwiftUIDemoApp.swift in Sources */,
+				76844FE027B7337900154639 /* PushingScreen.swift in Sources */,
+				762B5EDA27A3735E00C2D24D /* Homescreen.swift in Sources */,
+				76844FE527B79C5000154639 /* protocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
